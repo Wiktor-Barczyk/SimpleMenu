@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-/* Twoja implementacja */
 public abstract class Vehicle
 {
     public string Brand { get; set; }
