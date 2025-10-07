@@ -63,11 +63,11 @@ class Program
             else if (FChoice == 2)
             {
                 Vehicle Bicycle = new Bicycle();
-                Console.Write("Podaj marke roweru: ");
+                Console.Write("Enter the brand of your bicycle: ");
                 Bicycle.Brand = Console.ReadLine();
-                Console.Write("Podaj model roweru: ");
+                Console.Write("Enter the model of your bicycle: ");
                 Bicycle.Model = Console.ReadLine();
-                Console.Write("Podaj rok produkcji roweru: ");
+                Console.Write("Enter year of manufacture: ");
                 Bicycle.Year = int.Parse(Console.ReadLine());
                 pojazd.Add(Bicycle);
                 Console.Clear();
