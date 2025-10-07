@@ -45,10 +45,21 @@ class Program
             Console.WriteLine("4.Exit");
             Console.Write("Enter your choice: ");
             string Choice = Console.ReadLine();
-            int FChoice = int.Parse(Choice);
+            try
+            {
+                int.Parse(Choice);
+            }
+            catch
+            {
+                Console.Clear();
+                Console.WriteLine("Invalid input. Please enter a number between 1 and 4.");
+                Console.WriteLine();
+                continue;
+            }
+            int NChoice = int.Parse(Choice);
             Console.WriteLine();
 
-            if (FChoice == 1)
+            if (NChoice == 1)
             {
                 Vehicle Car = new Car();
                 Console.Write("Enter the car brand: ");
@@ -60,7 +71,7 @@ class Program
                 pojazd.Add(Car);
                 Console.Clear();
             }
-            else if (FChoice == 2)
+            else if (NChoice == 2)
             {
                 Vehicle Bicycle = new Bicycle();
                 Console.Write("Enter the brand of your bicycle: ");
@@ -72,7 +83,7 @@ class Program
                 pojazd.Add(Bicycle);
                 Console.Clear();
             }
-            else if (FChoice == 3)
+            else if (NChoice == 3)
             {
                 foreach (var p in pojazd)
                 {
@@ -81,7 +92,7 @@ class Program
                     Console.WriteLine();
                 }
             }
-            else if (FChoice == 4)
+            else if (NChoice == 4)
             {
                 break;
             }
