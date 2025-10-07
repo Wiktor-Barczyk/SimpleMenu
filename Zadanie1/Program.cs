@@ -51,11 +51,11 @@ class Program
             if (FChoice == 1)
             {
                 Vehicle Car = new Car();
-                Console.Write("Podaj marke samochodu: ");
+                Console.Write("Enter the car brand: ");
                 Car.Brand = Console.ReadLine();
-                Console.Write("Podaj model samochodu: ");
+                Console.Write("Enter the car model: ");
                 Car.Model = Console.ReadLine();
-                Console.Write("Podaj rok produkcji samochodu: ");
+                Console.Write("Enter year of manufacture: ");
                 Car.Year = int.Parse(Console.ReadLine());
                 pojazd.Add(Car);
                 Console.Clear();
